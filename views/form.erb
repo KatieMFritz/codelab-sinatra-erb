@@ -3,40 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>Create Your Profile</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #eee;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Create a dating profile</h1>
-    <form action="/profile">
-      First Name
-      <input name="name"><br>
-      Age
-      <input name="age" type="number"><br>
-      Star Sign
-      <!-- <input name="star_sign"><br> -->
-      <select name="star_sign">
-        <option value="Don't know">Don't know</option>
-        <option value="Aries">Aries</option>
-        <option value="Taurus">Taurus</option>
-        <option value="Gemini">Gemini</option>
-        <option value="Cancer">Cancer</option>
-        <option value="Leo">Leo</option>
-        <option value="Virgo">Virgo</option>
-        <option value="Libra">Libra</option>
-        <option value="Scorpio">Scorpio</option>
-        <option value="Sagittarius">Sagittarius</option>
-        <option value="Capricorn">Capricorn</option>
-        <option value="Aquarius">Aquarius</option>
-        <option value="Pisces">Pisces</option>
-      </select><br>
-      Favorite Color
-      <input name="color" type="color"><br>
-      Hometown
-      <input name="hometown"><br>
-      What TV show did you watch most recently?
-      <input name="tv"><br>
-      Photo URL
-      <input name="photo"><br>
-      <button type="submit">Create my profile!</button>
-    </form>
+  <body class="container">
+    <div class="row">
+      <div class="card col-lg-6">
+        <h1>Create a dating profile</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card col-lg-6">
+        <form action="/profile">
+          First Name
+          <input name="name"><br>
+          Age
+          <input name="age" type="number"><br>
+          Star Sign
+          <select name="star_sign">
+            <option value="Don't know">Don't know</option>
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+            <option value="Virgo">Virgo</option>
+            <option value="Libra">Libra</option>
+            <option value="Scorpio">Scorpio</option>
+            <option value="Sagittarius">Sagittarius</option>
+            <option value="Capricorn">Capricorn</option>
+            <option value="Aquarius">Aquarius</option>
+            <option value="Pisces">Pisces</option>
+          </select><br>
+          Favorite Color
+          <input name="color" type="color"><br>
+          Hometown
+          <input name="hometown"><br>
+          What TV show did you watch most recently?
+          <input name="tv"><br>
+          Photo URL
+          <input name="photo"><br>
+          <button type="submit">Create my profile!</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

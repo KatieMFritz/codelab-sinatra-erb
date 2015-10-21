@@ -3,24 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title><%= params['name'] %>'s Profile</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <style>
-      body {
-        margin: 1em auto;
-        max-width: 800px;
-      }
-      #color {
+      body, #color {
         background-color: <%= params['color'] %>;
-        color: <%= params['color'] %>;
-      }
+        }
     </style>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/bootstrap.min.js"></script>
   </head>
-  <body>
-      <img src="<%= params['photo'] %>"><br>
-      <h1><%= params['name'] %></h1>
-      <strong>Age:</strong> <%= params['age'] %><br>
-      <strong>Star Sign:</strong> <%= params['star_sign'] %><br>
-      <strong>Favorite Color:</strong> <span id="color">______</span><br>
-      <strong>Hometown:</strong> <%= params['hometown'] %><br>
-      <strong>What TV show did you watch most recently?</strong> <%= params['tv'] %><br>
+  <body class="container">
+    <div class="row">
+      <div class="card col-lg-6">
+        <h1><%= params['name'] %></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card col-lg-6 clearfix">
+        <div class="col-sm-6">
+          <img src="<%= params['photo'] %>"><br>
+        </div>
+        <div class="col-sm-6">
+          <p><strong>Age:</strong> <%= params['age'] %></p>
+          <p><strong>Star Sign:</strong> <%= params['star_sign'] %></p>
+          <p><strong>Favorite Color:</strong> <span id="color">______</span></p>
+          <p><strong>Hometown:</strong> <%= params['hometown'] %></p>
+          <p><strong>What TV show did you watch most recently?</strong> <em><%= params['tv'] %></em></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
