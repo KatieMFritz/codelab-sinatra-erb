@@ -19,3 +19,8 @@ button {
   font-weight: 700;
   color: green;
 }
+
+a {
+  text-decoration: underline;
+  font-weight: 700;
+}
