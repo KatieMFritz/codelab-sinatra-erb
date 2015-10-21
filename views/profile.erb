@@ -2,14 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Profile</title>
+    <title><%= params['name'] %>'s Profile</title>
+    <style>
+      body {
+        margin: 1em auto;
+        max-width: 800px;
+      }
+      #color {
+        background-color: <%= params['color'] %>;
+        color: <%= params['color'] %>;
+      }
+    </style>
   </head>
   <body>
       <img src="<%= params['photo'] %>"><br>
       <h1><%= params['name'] %></h1>
       <strong>Age:</strong> <%= params['age'] %><br>
       <strong>Star Sign:</strong> <%= params['star_sign'] %><br>
-      <strong>Favorite Color:</strong> <%= params['color'] %><br>
+      <strong>Favorite Color:</strong> <span id="color">______</span><br>
       <strong>Hometown:</strong> <%= params['hometown'] %><br>
       <strong>What TV show did you watch most recently?</strong> <%= params['tv'] %><br>
   </body>
