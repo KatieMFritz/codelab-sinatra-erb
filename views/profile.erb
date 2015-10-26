@@ -34,7 +34,7 @@
     </div>
     <div class="row">
       <div class="card col-lg-6 clearfix">
-        <form action="//formspree.io/katiemfritz+junk@gmail.com" method="POST">
+        <form action="//formspree.io/<%= params['email'] %>" method="POST">
           <fieldset>
             <legend><h2>Contact <%= params['name'] %></h2></legend>
             <div class="row">
@@ -43,8 +43,8 @@
                 <input id="yourname" type="text" name="name">
               </div>
               <div class="col-sm-6">
-                <label for="email">Your Email</label>
-                <input id="email" type="email" name="_replyto">
+                <label for="from-email">Your Email</label>
+                <input id="from-email" type="email" name="_replyto">
               </div>
             </div>
             <div class="row">
