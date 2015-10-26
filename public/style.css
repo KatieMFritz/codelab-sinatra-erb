@@ -24,3 +24,7 @@ a {
   text-decoration: underline;
   font-weight: 700;
 }
+
+image {
+  max-width: 100%;
+}
